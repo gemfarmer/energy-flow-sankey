@@ -1,0 +1,77 @@
+'use strict';
+
+var _ = require('lodash');
+
+// Get list of graphs
+exports.index = function(req, res) {
+  res.json({
+"links": [
+{"source":"Coal","target":"Industry","value":"11.4"},
+{"source":"Coal","target":"Residential Buildings","value":"5"},
+{"source":"Coal","target":"Commercial/Public Buildings & Services","value":"3.8"},
+{"source":"Coal","target":"Energy Supply","value":"3.7"},
+{"source":"Coal","target":"Transport","value":".5"},
+{"source":"Coal","target":"Agriculture","value":".6"},
+{"source":"Natural Gas","target":"Industry","value":"7.7"},
+{"source":"Natural Gas","target":"Residential Buildings","value":"4.4"},
+{"source":"Natural Gas","target":"Commercial/Public Buildings & Services","value":"2.4"},
+{"source":"Natural Gas","target":"Energy Supply","value":"3.7"},
+{"source":"Natural Gas","target":"Transport","value":".7"},
+{"source":"Natural Gas","target":"Agriculture","value":".1"},
+{"source":"Oil","target":"Industry","value":"3.5"},
+{"source":"Oil","target":"Residential Buildings","value":"1.3"},
+{"source":"Oil","target":"Commercial/Public Buildings & Services","value":".8"},
+{"source":"Oil","target":"Energy Supply","value":"1"},
+{"source":"Oil","target":"Transport","value":"13.5"},
+{"source":"Oil","target":"Agriculture","value":".9"},
+{"source":"Waste Power","target":"Industry","value":"0.2"},
+{"source":"Waste Power","target":"Residential Buildings","value":"0.1"},
+{"source":"Waste Power","target":"Commercial/Public Buildings & Services","value":"0.1"},
+{"source":"Direct Emissions","target":"Industry","value":"6.3"},
+{"source":"Direct Emissions","target":"Residential Buildings","value":".2"},
+{"source":"Direct Emissions","target":"Waste","value":"2.9"},
+{"source":"Direct Emissions","target":"Energy Supply","value":"4.9"},
+{"source":"Direct Emissions","target":"Land Use Change","value":"14.7"},
+{"source":"Direct Emissions","target":"Agriculture","value":"5.6"},
+{"source":"Industry","target":"Carbon Dioxide","value":"25.5"},
+{"source":"Industry","target":"Methane","value":".1"},
+{"source":"Industry","target":"Nitrous Oxide","value":"1.6"},
+{"source":"Industry","target":"HFCs & PFCs","value":"1.8"},
+{"source":"Residential Buildings","target":"Carbon Dioxide","value":"10.4"},
+{"source":"Residential Buildings","target":"Nitrous Oxide","value":".3"},
+{"source":"Residential Buildings","target":"Methane","value":".3"},
+{"source":"Transport","target":"Carbon Dioxide","value":"14.8"},
+{"source":"Transport","target":"Nitrous Oxide","value":".2"},
+{"source":"Agriculture","target":"Carbon Dioxide","value":"1.4"},
+{"source":"Agriculture","target":"Nitrous Oxide","value":".6"},
+{"source":"Agriculture","target":"Methane","value":"5"},
+{"source":"Commercial/Public Buildings & Services","target":"Carbon Dioxide","value":"7.2"},
+{"source":"Energy Supply","target":"Carbon Dioxide","value":"8.4"},
+{"source":"Energy Supply","target":"Methane","value":"4.8"},
+{"source":"Land Use Change","target":"Carbon Dioxide","value":"8.2"},
+{"source":"Land Use Change","target":"Methane","value":"2.2"},
+{"source":"Land Use Change","target":"Nitrous Oxide","value":"4.3"},
+{"source":"Waste","target":"Methane","value":"2.9"},
+{"source":"Waste","target":"Nitrous Oxide","value":".1"}
+] ,
+"nodes": [
+{"name":"Coal"},
+{"name":"Natural Gas"},
+{"name":"Oil"},
+{"name":"Waste Power"},
+{"name":"Direct Emissions"},
+{"name":"Industry"},
+{"name":"Residential Buildings"},
+{"name":"Commercial/Public Buildings & Services"},
+{"name":"Transport"},
+{"name":"Agriculture"},
+{"name":"Energy Supply"},
+{"name":"Land Use Change"},
+{"name":"Waste"},
+{"name":"Carbon Dioxide"},
+{"name":"Methane"},
+{"name":"Nitrous Oxide"},
+{"name":"HFCs & PFCs"}
+] });
+
+};
